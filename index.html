@@ -128,6 +128,32 @@
             padding: 30px;
             color: #888;
         }
+   /* 추가 사진 2장 */
+.extra-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.extra-photos img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 모바일 */
+@media (max-width: 600px) {
+    .extra-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .extra-photos img {
+        height: auto;
+    }
+}
     </style>
 </head>
 
@@ -175,7 +201,10 @@
         <img src="images/photo2.jpg" alt="오른쪽 사진">
     </div>
 </div>
-
+<div class="extra-photos">
+    <img src="images/photo6.jpg" alt="추가 사진 1">
+    <img src="images/photo7.jpg" alt="추가 사진 2">
+</div>
     </div>
 
 </section>
