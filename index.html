@@ -173,7 +173,21 @@
     height: auto;
     display: block;
 }
-        /* 모바일 PHOTO */
+        /* PC - grid3, grid4 좌우 배치 */
+.photo-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    width: 100%;
+}
+
+.photo-pair img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+        
+ /* 모바일 PHOTO */
 @media (max-width: 600px) {
 
     .full-grid-section {
@@ -196,6 +210,20 @@
         height: auto;
         display: block;
         object-fit: contain;
+    }
+
+    /* 모바일에서는 grid3, grid4를 다시 세로로 */
+    .photo-pair {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .photo-pair img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
     </style>
