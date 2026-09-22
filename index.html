@@ -154,47 +154,24 @@
         height: auto;
     }
 }
-/* 가로 전체 그리드 */
+/* PHOTO - 원본 비율 유지 */
 .full-grid-section {
     max-width: none;
     width: 100%;
     padding: 80px 0;
 }
 
-.full-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px;
+.photo-stack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 4px;
-    width: 100%;
 }
 
-.full-grid img {
+.photo-stack img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
-}
-
-.full-grid .grid-large {
-    grid-row: span 2;
-}
-
-/* 모바일 화면 */
-@media (max-width: 600px) {
-    .full-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .full-grid img {
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    .full-grid .grid-large {
-        grid-row: auto;
-    }
 }
     </style>
 </head>
@@ -381,14 +358,13 @@
 <section class="full-grid-section" id="full-grid">
     <h2>PHOTO</h2>
 
-    <div class="full-grid">
-        <img class="grid-large" src="images/grid1.jpg" alt="그리드 사진 1">
+    <div class="photo-stack">
+        <img src="images/grid1.jpg" alt="그리드 사진 1">
         <img src="images/grid2.jpg" alt="그리드 사진 2">
         <img src="images/grid3.jpg" alt="그리드 사진 3">
         <img src="images/grid4.jpg" alt="그리드 사진 4">
     </div>
 </section>
-
     <!-- 소개 -->
     <section id="about">
 
