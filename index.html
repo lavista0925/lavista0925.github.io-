@@ -118,6 +118,27 @@
             border-radius: 12px;
         }
 
+        /* YouTube 동영상 그리드 */
+.youtube-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.youtube-grid iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* 모바일 화면 */
+@media (max-width: 600px) {
+    .youtube-grid {
+        grid-template-columns: 1fr;
+    }
+}
         /* 소개 영역 */
         .about {
             background-color: white;
@@ -201,11 +222,14 @@
 
     <h2>동영상</h2>
 
+    <!-- 기존 동영상 1번 -->
+    <h3>동영상 1</h3>
+
     <iframe
         width="100%"
         height="450"
         src="https://www.youtube.com/embed/abFAD0EQsOg?autoplay=1&mute=1&loop=1&playlist=abFAD0EQsOg"
-        title="YouTube 동영상"
+        title="YouTube 동영상 1"
         frameborder="0"
         allow="autoplay; encrypted-media; picture-in-picture"
         allowfullscreen>
@@ -218,6 +242,102 @@
             YouTube에서 영상 보기 ↗
         </a>
     </p>
+
+
+    <!-- 새로운 동영상 10개 -->
+    <div class="youtube-grid">
+
+        <!-- 동영상 2 -->
+        <iframe
+            src="https://www.youtube.com/embed/7mYDTZic1Co?autoplay=1&mute=1"
+            title="YouTube 동영상 2"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 3 -->
+        <iframe
+            src="https://www.youtube.com/embed/lWHeFlVio7w?autoplay=1&mute=1"
+            title="YouTube 동영상 3"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 4 -->
+        <iframe
+            src="https://www.youtube.com/embed/LZG9zUe9Ujc?autoplay=1&mute=1"
+            title="YouTube 동영상 4"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 5 -->
+        <iframe
+            src="https://www.youtube.com/embed/n_M4NwL2yzw?autoplay=1&mute=1"
+            title="YouTube 동영상 5"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 6 -->
+        <iframe
+            src="https://www.youtube.com/embed/M1RX6H87k4o?autoplay=1&mute=1"
+            title="YouTube 동영상 6"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 7 -->
+        <iframe
+            src="https://www.youtube.com/embed/8jmu4ZKVlDM?autoplay=1&mute=1"
+            title="YouTube 동영상 7"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 8 -->
+        <iframe
+            src="https://www.youtube.com/embed/M1RX6H87k4o?autoplay=1&mute=1"
+            title="YouTube 동영상 8"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 9 -->
+        <iframe
+            src="https://www.youtube.com/embed/6iWQ8qWtzR8?autoplay=1&mute=1"
+            title="YouTube 동영상 9"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 10 -->
+        <iframe
+            src="https://www.youtube.com/embed/ATPxzgEjcwY?autoplay=1&mute=1"
+            title="YouTube 동영상 10"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <!-- 동영상 11 -->
+        <iframe
+            src="https://www.youtube.com/embed/-mVlEWGbUEo?autoplay=1&mute=1"
+            title="YouTube 동영상 11"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </div>
 
 </section>
 
